@@ -1,6 +1,5 @@
 package com.aj.jpcsample.jpc.ui.theme
 
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
@@ -37,6 +36,16 @@ fun HappyBirthDayTheme(content: @Composable () -> Unit) {
 //        LightColorScheme
 //    }
 
+    MaterialTheme(
+        colorScheme = colorScheme,
+        typography = Typography, // make sure this exists
+        content = content
+    )
+}
+
+@Composable
+fun JpcTutorialTheme(content: @Composable () -> Unit) {
+    val colorScheme = LightColorScheme
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography, // make sure this exists
