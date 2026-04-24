@@ -27,7 +27,7 @@ import androidx.compose.ui.unit.sp
 import com.aj.jpcsample.R
 import com.aj.jpcsample.jpc.ui.theme.HappyBirthDayTheme
 
-class JpcActivity : ComponentActivity() {
+class HappyBirthdayActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
