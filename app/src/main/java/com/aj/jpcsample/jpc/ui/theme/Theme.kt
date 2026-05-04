@@ -52,3 +52,13 @@ fun JpcTutorialTheme(content: @Composable () -> Unit) {
         content = content
     )
 }
+
+@Composable
+fun MyComposeListTheme(content: @Composable () -> Unit) {
+    val colorScheme = DarkColorScheme
+    MaterialTheme(
+        colorScheme = colorScheme,
+        typography = Typography, // make sure this exists
+        content = content
+    )
+}
