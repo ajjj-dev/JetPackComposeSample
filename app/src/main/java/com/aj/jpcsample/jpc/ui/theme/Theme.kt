@@ -28,7 +28,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun HappyBirthDayTheme(content: @Composable () -> Unit) {
+fun MyJpcTheme(content: @Composable () -> Unit) {
     val colorScheme = LightColorScheme
 //    val colorScheme = if (isSystemInDarkTheme()) {
 //        DarkColorScheme
@@ -36,26 +36,6 @@ fun HappyBirthDayTheme(content: @Composable () -> Unit) {
 //        LightColorScheme
 //    }
 
-    MaterialTheme(
-        colorScheme = colorScheme,
-        typography = Typography, // make sure this exists
-        content = content
-    )
-}
-
-@Composable
-fun JpcTutorialTheme(content: @Composable () -> Unit) {
-    val colorScheme = LightColorScheme
-    MaterialTheme(
-        colorScheme = colorScheme,
-        typography = Typography, // make sure this exists
-        content = content
-    )
-}
-
-@Composable
-fun MyComposeListTheme(content: @Composable () -> Unit) {
-    val colorScheme = DarkColorScheme
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography, // make sure this exists

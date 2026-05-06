@@ -25,13 +25,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.aj.jpcsample.R
-import com.aj.jpcsample.jpc.ui.theme.HappyBirthDayTheme
+import com.aj.jpcsample.jpc.ui.theme.MyJpcTheme
 
 class HappyBirthdayActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            HappyBirthDayTheme {
+            MyJpcTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -104,7 +104,7 @@ fun GreetingText(message: String, from: String, fromAj: String, modifier: Modifi
 @Preview(showBackground = true)
 @Composable
 fun BirthdayCardPreview() {
-    HappyBirthDayTheme(
+    MyJpcTheme(
         {
             GreetingImage(
                 message = "Happy Birthday Sam!",

@@ -29,13 +29,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.aj.jpcsample.jpc.ui.theme.MyComposeListTheme
+import com.aj.jpcsample.jpc.ui.theme.MyJpcTheme
 
 class MyComposeListActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MyComposeListTheme {
+            MyJpcTheme {
                 MyComposeList()
             }
         }

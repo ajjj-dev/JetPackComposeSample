@@ -24,14 +24,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.aj.jpcsample.R
-import com.aj.jpcsample.jpc.ui.theme.JpcTutorialTheme
+import com.aj.jpcsample.jpc.ui.theme.MyJpcTheme
 
 class JpcTutorialActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            JpcTutorialTheme {
+            MyJpcTheme {
                 JpcTutorial(
                     modifier = Modifier
                 )
@@ -98,12 +98,10 @@ fun TutorialText(title: String, brief: String, description: String) {
 
 @Preview
 @Composable
-fun JocTutorialPreview() {
-    JpcTutorialTheme(
-        {
-            JpcTutorial(
-                modifier = Modifier
-            )
-        }
-    )
+fun JpcTutorialPreview() {
+    MyJpcTheme {
+        JpcTutorial(
+            modifier = Modifier
+        )
+    }
 }
