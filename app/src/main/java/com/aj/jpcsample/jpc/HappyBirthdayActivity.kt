@@ -111,6 +111,6 @@ fun BirthdayCardPreview() {
                 from = "From Emma",
                 modifier = Modifier.padding(8.dp)
             )
-        },
+        }
     )
 }
